@@ -1,0 +1,31 @@
+.posts {
+  height: 100vh;
+  background: #191919;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.posts__title {
+  position: absolute;
+  top: 0;
+  color: #fff;
+}
+
+.posts__title::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(92,92,235,1) 60%);
+  width: 100%;
+  height: 6px;
+}
+
+.posts__wrapper {
+  height: 70vh;
+  display: flex;
+  /* align-items: center;
+  padding-left: 10vw; */
+  /* background: rgb(138, 138, 138); */
+}

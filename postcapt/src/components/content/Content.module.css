@@ -1,0 +1,19 @@
+.content {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.content__wrapper {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  -webkit-overflow-scrolling: touch;
+  display: grid;
+}
+

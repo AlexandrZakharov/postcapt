@@ -1,0 +1,102 @@
+.navbar {
+  position: absolute;
+  border-right: 2px solid rgb(34, 34, 34);
+  height: 100vh;
+  display: grid;
+  background: rgba(25, 25, 25, 0.75);
+  backdrop-filter: blur(30px);
+  transition: width .2s linear;
+  z-index: 1;
+}
+
+.navbar:hover .navbtn {
+  color: rgb(180, 180, 180);
+}
+
+.navbar__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__wrapper {
+  animation: showMenu 0.5s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.navbtn {
+  font-size: 40px;
+  color: rgb(75, 75, 75);
+  transform: rotate(90deg);
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.navbar__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 28px;
+  cursor: pointer;
+}
+
+.navbar__getstarted {
+  color: #cfcfcf;
+  width: 140px;
+  margin: 0 auto;
+  font-size: 20px;
+  background: linear-gradient(90deg, rgb(168, 168, 168) 0%, rgb(92, 92, 92) 50%, rgb(168, 168, 168) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all .3s linear;
+  cursor: pointer;
+}
+
+.navbar__getstarted:hover {
+  background-position: 100px 0;
+  transition: all .2s linear;
+}
+
+.navbar__menu {
+  margin-top: 100px;
+}
+
+.navbar__menu li {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 40px;
+  color: #f3f3f3;
+  font-weight: 300;
+  padding-left: 50px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  transition: color 2s ease, padding .4s ease;
+  cursor: pointer;
+}
+
+.navbar__menu li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  width: 0;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  transition: width 0.3s linear;
+}
+
+.navbar__menu li:hover::after {
+  width: 220px;
+  transition: width 0.3s linear;
+}
+
+.navbar__menu li:hover {
+  padding-left: 60px;
+  transition: padding .4s linear;
+}
+
+@keyframes showMenu {
+  to {
+    opacity: 1;
+  }
+}

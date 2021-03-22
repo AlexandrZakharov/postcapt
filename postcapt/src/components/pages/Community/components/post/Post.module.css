@@ -1,0 +1,135 @@
+.post {
+  min-width: 1110px;
+  height: 698px;
+  display: grid;
+  grid-template-columns: 610px auto;
+  margin-right: 80px;
+  border: 1px solid rgb(37, 37, 37);
+}
+
+.post__image {
+
+}
+
+.post__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post__info {
+  background: #191919;
+}
+
+.postInfo__wrapper {
+  padding-top: 34px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.postInfo__top {
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post__title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.post_dateAndSettings {
+  display: flex;
+  align-items: center;
+  color: #4F4F4F;
+  position: relative;
+}
+
+.post__date {
+  font-size: 13px;
+  margin-right: 28px;
+}
+
+.post__settings {
+  position: absolute;
+  top: -12px;
+  right: -4px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.postSettings__icon {
+  padding: 3px;
+  transform: rotate(-90deg) scale(0.9);
+}
+
+.post__views {
+  margin-left: 40px;
+  color: #444444;
+  display: flex;
+  align-items: center;
+}
+
+.postViews__icon {
+  transform: scale(0.6);
+}
+
+.postViews__text {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.post__text {
+  margin: 15px 40px 0 40px;
+  color: #B6B6B6;
+  font-size: 18px;
+}
+
+.post__comments {
+  position: absolute;
+  width: 100%;
+  bottom: 84px;
+}
+
+.post__footer {
+  margin: 0 40px;
+  margin-top: auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(53, 53, 53);
+}
+
+.post__commentsCount,
+.post__likesCount {
+  display: flex;
+  justify-content: space-between;
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+}
+
+.commentsCount__icon,
+.likesCount__icon {
+  transform: scale(1.1);
+  color: #444444;
+}
+
+.post__commentsCount:hover .commentsCount__icon {
+  color: #afafaf;
+}
+
+.post__likesCount:hover .likesCount__icon {
+  color: #aa2626;
+}
+
+.commentsCount__text,
+.likesCount__text {
+  margin: 4px 8px 0 8px;
+}

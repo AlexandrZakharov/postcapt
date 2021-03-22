@@ -1,0 +1,20 @@
+.logo {
+  font-size: 56px;
+  color: rgb(229, 229, 229);
+  line-height: 100px;
+  width: 320px;
+}
+
+.logo__post {
+  font-weight: 900;
+  /* line-height: 80px; */
+  margin: 0;
+}
+
+.logo__capt {
+  font-weight: 900;
+  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(92,92,235,1) 20%, rgba(131,87,195,1) 37%, rgba(217,54,243,1) 58%, rgba(221,43,80,1) 83%, rgba(241,149,47,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
